@@ -7,14 +7,14 @@
     "startTimestamp":"2016-02-02T00:00:00Z",
     "endTimestamp":"2016-02-02T00:00:00Z",
     "isFeatured":false,
-    "photoUrl:":"http://cfile6.uf.tistory.com/image/222D964256B0A11B49A9D3",
+    "photoUrl":"http://cfile6.uf.tistory.com/image/222D964256B0A11B49A9D3",
     "isLivestream":true,
     "youtubeUrl":"",
     "tags": ["THEME_BLOG"],
     "mainTag":"THEME_BLOG",
     "hashtag":"tistory",
     "color":"#ffffff",
-    "speakers:":["dubu"],
+    "speakers":["dubu"],
     "room":"",
     "captionsUrl":""
   }
