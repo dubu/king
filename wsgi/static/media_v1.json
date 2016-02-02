@@ -16,7 +16,7 @@
     "color": "#3f51b5",
     "hashtag": "keynote",
     "room": "keynote",
-    "speakers": ['aaa']
+    "speakers": ["aaa"]
   }
 ]
 , "tags":[ { "category":"THEME2", "tag":"THEME_BLOG", "name":"Tistory2", "original_id":"tag_theme_blog2", "abstract":"", "order_in_category":5 } ] }
