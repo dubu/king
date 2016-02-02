@@ -1,4 +1,5 @@
-{"sessions": [
+{
+  "sessions": [
   {
     "id":"d10",
     "url":"http://londonpointer.com/1410",
@@ -18,5 +19,5 @@
     "room":"",
     "captionsUrl":""
   }
-]
-, "tags":[ { "category":"THEME", "tag":"THEME_BLOG", "name":"Tistory", "original_id":"tag_theme_blog", "abstract":"", "order_in_category":4 }, { "category":"TOPIC", "tag":"TOPIC_ENTERTAIN", "name":"Entertain2", "original_id":"tag_topic_entertain", "abstract":"", "order_in_category":1 } ] }
+],
+  "tags":[ { "category":"THEME", "tag":"THEME_BLOG", "name":"Tistory", "original_id":"tag_theme_blog", "abstract":"", "order_in_category":4 }, { "category":"TOPIC", "tag":"TOPIC_ENTERTAIN", "name":"Entertain2", "original_id":"tag_topic_entertain", "abstract":"", "order_in_category":1 } ] }
