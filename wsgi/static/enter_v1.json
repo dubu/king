@@ -10,7 +10,7 @@
 "photoUrl":"https://www.youtube.com/embed/Jhy4KLPek0Q",
 "isLivestream":true,
 "youtubeUrl":"",
-"tags": ["2014enter"],
+"tags": ["2014enter", "TYPE_SESSIONS"],
 "mainTag":"2014enter",
 "hashtag":"tistory",
 "color":"#ffffff",
@@ -29,7 +29,7 @@
 "photoUrl":"https://www.youtube.com/embed/BkjDclzyiVs",
 "isLivestream":true,
 "youtubeUrl":"",
-"tags": ["2014enter"],
+"tags": ["2014enter", "TYPE_SESSIONS"],
 "mainTag":"2014enter",
 "hashtag":"tistory",
 "color":"#ffffff",
@@ -48,7 +48,7 @@
 "photoUrl":"http://cfile24.uf.tistory.com/image/2107454556B0B7D9242355",
 "isLivestream":true,
 "youtubeUrl":"",
-"tags": ["2014enter"],
+"tags": ["2014enter", "TYPE_SESSIONS"],
 "mainTag":"2014enter",
 "hashtag":"tistory",
 "color":"#ffffff",
@@ -67,7 +67,7 @@
 "photoUrl":"http://cfile10.uf.tistory.com/image/27717B4856B08AFC2DDB43",
 "isLivestream":true,
 "youtubeUrl":"",
-"tags": ["2014enter"],
+"tags": ["2014enter", "TYPE_SESSIONS"],
 "mainTag":"2014enter",
 "hashtag":"tistory",
 "color":"#ffffff",
@@ -86,7 +86,7 @@
 "photoUrl":"",
 "isLivestream":true,
 "youtubeUrl":"",
-"tags": ["2014enter"],
+"tags": ["2014enter", "TYPE_SESSIONS"],
 "mainTag":"2014enter",
 "hashtag":"tistory",
 "color":"#ffffff",
@@ -95,4 +95,4 @@
 "captionsUrl":""
 }
 ]
-, "tags":[ { "category":"THEME", "tag":"THEME_BLOG", "name":"Tistory", "original_id":"tag_theme_blog", "abstract":"", "order_in_category":4 }, { "category":"TOPIC", "tag":"TOPIC_ENTERTAIN", "name":"Entertain2", "original_id":"tag_topic_entertain", "abstract":"", "order_in_category":1 } ] }
+, "tags":[ { "category":"THEME", "tag":"2014enter", "name":"2014enter", "original_id":"2014enter", "abstract":"", "order_in_category":4 } ] }

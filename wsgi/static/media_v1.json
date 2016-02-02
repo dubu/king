@@ -10,7 +10,7 @@
 "photoUrl":"http://cfile22.uf.tistory.com/image/215CDC4256B0A19631172F",
 "isLivestream":true,
 "youtubeUrl":"",
-"tags": ["2014media"],
+"tags": ["2014media", "TYPE_SESSIONS"],
 "mainTag":"2014media",
 "hashtag":"tistory",
 "color":"#ffffff",
@@ -19,4 +19,4 @@
 "captionsUrl":""
 }
 ]
-, "tags":[ { "category":"THEME", "tag":"2014media", "name":"2014media", "original_id":"tag_theme_blog", "abstract":"", "order_in_category":4 } ] }
+, "tags":[ { "category":"THEME", "tag":"2014media", "name":"2014media", "original_id":"2014media", "abstract":"", "order_in_category":5 } ] }
