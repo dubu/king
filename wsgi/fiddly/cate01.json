@@ -1,0 +1,225 @@
+{
+  'id': 'user/c8bd8162-a7b6-475c-b7b6-968b72e84fd0/category/2014IT',
+  'items': [
+    {
+      'summary': {
+        'content': '갤럭시S7과 갤럭시S7엣지가 중국의 3C(China Compulsory Certification) 인증을 1월 28일에 마쳤다는 것이 확인됐다. 중국에서 갤럭시S7이 출시되는 것은 의심의 여지가 없겠으나 이 인증은 우리에게 어느 정도의 확인을 제공한다. 갤럭시S7(SM-G9300 과 SM-G9308, 각각 언락 및 이통사 모델)과 갤럭시S7엣지(SM-G9350)가 3C에 의해 확인되는 과정에서 9V 1.67A 와 5V 2A의 빠른 충전(fast c..',
+        'direction': 'ltr'
+      },
+      'author': 'T.B',
+      'title': '갤럭시S7 중국 3C 인증 빠른충전 지원 확인',
+      'id': 'Crcr2eqVGmgWOWLVnlUU+DsOKuLDLQ5nDezY/QbFMVQ=_1529ce8ba29:345abf7:ae8aca10',
+      'origin': {
+        'htmlUrl': 'http://ryueyes11.tistory.com/',
+        'title': 'TB의 SNS 이야기',
+        'streamId': 'feed/http://ryueyes11.tistory.com/rss'
+      },
+      'alternate': [
+        {
+          'href': 'http://ryueyes11.tistory.com/7484',
+          'type': 'text/html'
+        }
+      ],
+      'keywords': [
+        'Samsung',
+        'MWC 2016',
+        '갤럭시S7',
+        '갤럭시s7엣지',
+        '모바일',
+        '삼성',
+        '안드로이드'
+      ],
+      'crawled': 1454331443753,
+      'unread': True,
+      'categories': [
+        {
+          'id': 'user/c8bd8162-a7b6-475c-b7b6-968b72e84fd0/category/2014IT',
+          'label': '2014IT'
+        }
+      ],
+      'fingerprint': '35912253',
+      'originId': 'http://ryueyes11.tistory.com/7484',
+      'published': 1454330148000
+    },
+    {
+      'summary': {
+        'content': '삼성 인터넷 브라우저가 4.0 버전으로 업데이트 되면서 Ad-Blocking 앱 크리스탈(Crystal)로 구글 플레이 스토어에 배포됐다. 이 앱은 광고 배너와 팝-업들을 차단할 뿐만 아니라 사용자 기록 추적과 멜웨어를 차단한다는 설명이다. 또한 최근 트랜드인 데이터 압축 기술을 통해 4배 더 빨라진 웹 페이지 로딩속도와 50%의 데이터 절감 효과를 통해 웹 브라우징을 하는 동안 배터리 수명 향상을 갖는다는 삼성측의 설명이다. 삼성 인터넷 4.0..',
+        'direction': 'ltr'
+      },
+      'author': 'T.B',
+      'title': '삼성 광고차단 브라우저 출시',
+      'id': 'Crcr2eqVGmgWOWLVnlUU+DsOKuLDLQ5nDezY/QbFMVQ=_1529ccdda1c:33b57e1:ae8aca10',
+      'origin': {
+        'htmlUrl': 'http://ryueyes11.tistory.com/',
+        'title': 'TB의 SNS 이야기',
+        'streamId': 'feed/http://ryueyes11.tistory.com/rss'
+      },
+      'visual': {
+        'processor': 'feedly-nikon-v3.1',
+        'url': 'http://cfile27.uf.tistory.com/image/275F4A3956AF4D0509BF81',
+        'contentType': 'image/jpeg',
+        'width': 630,
+        'height': 276
+      },
+      'alternate': [
+        {
+          'href': 'http://ryueyes11.tistory.com/7483',
+          'type': 'text/html'
+        }
+      ],
+      'keywords': [
+        'Samsung',
+        '광고차단',
+        '삼성',
+        '삼성 인터넷 4.0 웹브라우저',
+        '삼성 크리스탈 브라우저'
+      ],
+      'crawled': 1454329682460,
+      'unread': True,
+      'categories': [
+        {
+          'id': 'user/c8bd8162-a7b6-475c-b7b6-968b72e84fd0/category/2014IT',
+          'label': '2014IT'
+        }
+      ],
+      'fingerprint': 'c49d4059',
+      'originId': 'http://ryueyes11.tistory.com/7483',
+      'published': 1454329378000
+    },
+    {
+      'summary': {
+        'content': '<div>\n\n<ins data-ad-client="ca-pub-7221681300599998" data-ad-slot="5496446849"></ins>\n</div><p>이 블로그를 통해서 몇번 IBM에서 서비스하고 있는 클라우드 DB 솔루션인 Cloudant에 대해서 소개한 적이 있다. 간략하게 직접 써보고 후기를 써보기도 했다. IBM은 Cloudant를 클라우드 서비스 기반에서 제공하기 때문에 DBaaS(Database as a Service)라고 정의하고 있는데 실제로 클라우드 환경 안에서 서비스를 제공하고 있으며 클라우드 서버에 데이터를 저장하기도 하지만 로컬 스토리지에 동기화 시킬 수 있는 기능도 있어서 양쪽에서 편한 접근 방법으로 DB 서비스를 제공받고 그에 맞는 서비스를 만들수 있다는 것이 Cloudant의 장점이라고 할 수 있을 듯싶다. 이제부터 간단하게 IBM의 DBaaS인 Cloudant의 특징과 장점에 대해서 얘기를 해볼까 한다.</p>\n<p><br></p>\n<p>Cloudant는 앞서 얘기했듯 클라우드 기반의 서비스다. 관리 툴부터 시작하여 DB 엔진, 스토리지 등이 다 클라우드 환경에서 진행된다. 즉, 관리자는 DB 관리를 웹을 통해서 할 수 있는데 어디서든지 인터넷이 연결되는 환경이라면 다 접속이 가능하다는 얘기다. 물론 아무나 접속할 수 있게 하지는 않고 철저한 보안을 적용하여 허가 받은 관리자에 한하여 접속이 가능하다는 것은 당연한 얘기다. 어찌되었던 그 동안의 DBMS는 기업의 서버실이나 IDC에 설치되어 있는 서버에 설치되어 운영되었기 때문에 사무실에 들어가거나 IDC에서 가서만 접속이 가능했다. 물론 다양한 방법을 적용하여 외부에서도 접속할 수 있는 방식을 제공할 수도 있겠지만 불편했던 점이 있었던 것은 사실이다. 하지만 적어도 Cloudant는 어디서든지 인터넷이 연결되어 있다면 사용자 인증 과정을 거처서 관리자가 언제 어디서든 DB를 관리할 수 있다는 장점이 있다. 또한 모바일로도 제공하고 있기 때문에 이런 점에 있어서 관리의 효율성은 기존 DBMS보다는 상대적으로 앞서지 않을까 하는 생각이 든다. 물론 기업의 내부 관리 규약에 따라서 이런 부분이 적용되지 않을 수도 있지만 일반적인 DB 관리 부분에 있어서 클라우드 기반의 이런 환경은 효율성에 있어서 도움이 될 가능성이 크다는 것은 두말할 것 없다고 생각이 든다.</p>\n<p><br></p>\n<p><span><img height="479" width="638" src="http://cfile10.uf.tistory.com/image/2267214656A5BB7C083EEE"></span></p>\n<p>Cloudant 는 NoSQL 기반의 데이터베이스 시스템이다. Oracle의 Oracle DB나 MySQL, MS의 SQL Server, 오픈소스인 Maria DB나 PostreSQL, 심지어 IBM이 제공하는 DB2의 경우 관계형 데이터베이스 시스템(RDBMS)인데 Cloudant는 요즘 유행하고 있고 많이 사용하고 있는 MongoDB나 하둡의HBase 등과 같은 NoSQL 기반의 DBMS다. 그리고 Cloudant는 오픈소스 NoSQL DBMS인 아파치의CouchDB 2.0을 DB 엔진으로 사용하고 있기 때문에 풍부한 오픈소스 커뮤니티의 지원을 받을 수 있다는 장점이 있다. 그리고 이런 데이터베이스의 유지보수 및 관리를 IBM이 맡아서 진행하고 있기 때문에 기존의 오픈소스용 NoSQL DBMS를 사용하면서 겪게되는 불편한 부분이 해소가 된다. 상용 RDBMS의 경우 오라클이든 MS든 아니면 IBM이든 지속적으로 버그패치가 나오고 있으며 성능 이슈가 있을 경우에는 유,무료 지원 서비스를 통해서 지원을 받을 수 있다는 장점이 있지만 오픈소스가 기반이 되는 DBMS의 경우 RBDMS든 NoSQL DB든 관리자가 직접 커뮤니티 등에서 제공하는 패치나 성능 이슈에 대한 해결책을 찾아서 적용해야 하는 번거로움이 있었다. 그리고 유료 RDBMS의 경우도 버그나 성능에 대한 패치를 제공해준다고는 하지만 적용은 관리자가 직접 해야 하며 기업의 지원을 받는 경우에는 그에 따른 사용료를 내야 하는 불편함도 있다. 하지만 Cloudant의 경우 이런 불편함을 서비스를 제공하고 운영하는 IBM이 해주기 때문에 관리자는 Cloudant에 저장된 데이터에만 집중하면 되며 그것은 곧 관리자의 업무 효율성이 높아지기 때문에 전체 생산성 향상에도 도움이 될 수 있다는 것이 장점이다.</p>\n<p><br></p>\n<p>앞서 얘기했던 것처럼 IBM의 Cloudant는 NoSQL 기반의 DBMS다. 그러다보니 데이터 유형에 있어서 제한이 없다는 것이 장점이다. 이는 NoSQL 기반의 DBMS가 공통적으로 지니고 있는 특징이기는 한데 다른 NoSQL 기반의 DB나 서비스에 비해서 Cloudant가 갖는 장점은 일단 스토리지 자체가 클라우드 환경에서 동작하기 때문에 스토리지의 제한이 상대적으로 없다는 것이며 그것은 곧 데이터의 급격한 확장으로 인해 스토리지 인프라를 늘려야 할 때 효과적으로 빨리 늘림으로 서비스의 연속성을 유지할 수 있다는 것이다. 그리고 이런 작업에 대해서 이미 검증된 서비스 수준을 보유하고 있는 IBM이 다 진행해주고 관리해준다는 것이 장점이라고 할 수 있을 듯 싶다. 24/7이라는 애기를 종종 하는데 24시간, 일주일 내내 서포트를 해준다는 것으로 언제 어디서나 서비스를 제공해준다는 것이 장점이다. 즉, 무중단 서비스가 가능하다는 것이 IBM Cloudant의 장점이라는 얘기다.</p>\n<p><span><img height="433" width="692" src="http://cfile9.uf.tistory.com/image/2237C74C569B2FCB0D1CF7"></span></p>\n<p>또한 Cloudant는 아파치의CouchDB를 기반으로 제공해주지만 그 위에 IBM만이 엔터프라이즈 고객을 위한 다양한 기능들을 더해서 제공해준다. 즉, 모니터링 서비스나 인덱싱 기술, 위치기반 분석 기술, 고가용성 등의 DB 엔진이 제공해주지 않고 따로 서드파티 플러그인 등을 통해서 제공되는 기술을 IBM의 검증된 서비스로 제공받을 수 있다는 것이다. 인덱싱 기술은 실시간 인덱싱 기술을 제공하며 위치기반 분석 기술은 곧 위치기반 검색 기능 제공으로 이어지며, 고가용성의 경우 클라우드 기반에서 내부에서 클러스터링을 통해 DB를 묶을 수 있는데 그 묶음을 2개로 운영해서 서로간의 묶음 사이에 Push, Pull 기능을 통해 실시간 동기화로 어느 한쪽이 문제가 된다고 하더라도 이미 동기화되고 있는 다른 묶음의 DB 클러스터링을 통해 서비스를 제공받을 수 있도록 해준다. 또한 클라우드 환경과 로컬 환경의 동기화도 제공해주기 때문에 고가용성 부분에 있어서도 확실한 무중단 시스템을 제공한다. 즉, 오픈소스 솔루션이 갖고 되는 서비스의 퀄리티 문제점을 Cloudant는 해소해주고 있다는 얘기다.</p>\n<p><br></p>\n<p>종합적으로 얘기하자면 IBM의 Cloudant 서비스는 IBM이 책임지고 서비스 제공 및 관리를 담당하는 서비스이기 때문에 DBMS를 관리하는 IT 관리자는 시스템(하드웨어와 소프트웨어 모두)의 운영 및 관리가 아닌 그 안의 데이터에만 집중하면 되는 환경을 제공해주는 것이 IBM Cloudant의 특징이자 장점이라고 할 수 있을 것이다. 이런 특징 및 장점 덕분에 다양한 분야의 수많은 기업들이 IBM의 Cloudant를 도입해서 쓰고 있다. 예를 들어, Delhaize e-Commerce site에도 도입이 되었고 영어 학습으로 유명한 로제타스톤의 이러닝(e-Learning) 서비스에도 도입이 되었다. MS의 X-Box Game Studio 서비스에도 적용되었으며 모바일 게임 업체인 HotHead 게임도 도입해서 효과를 보고 있다. 모바일 기반의 SNS인 GainFitness에도 적용되었고 글로벌 자산운용사인 Fidelity Investments도 도입해서 효과를 보고 있다고 한다. 이 외에도 수많은 기업들(삼성, 노키아, 아카마이 등)이 도입해서 효과를 보고 있다고 하니 참고하면 좋을 듯 싶다.</p>\n<p><span><img height="440" width="660" src="http://cfile30.uf.tistory.com/image/256EDE3956A5BBE63237A7"></span></p>\n<p>물론 Cloudant가 NoSQL 기반의 DBMS이기 때문에 다루는 데이터의 성격에 따라서 NoSQL이 좋을 수도 있고 기존의 오라클이나 SQL Server, DB2, MySQL 등의 RDBMS가 더 좋을 수도 있다. 즉, 요즘 NoSQL이 유행히며 MongoDB를 많이 쓴다고 해서 무조건 NoSQL이 좋다고 할 수는 없다. 다만 요즘의 생성되고 관리되는 데이터들이 규격화되어있는 데이터보다는 규격화가 되어있지 않은 이른바 비정형 데이터들이 많기 때문에 비정형 데이터를 다루는데 있어서는 RDBMS보다는 NoSQL이 상대적으로 유리하다는 부분에 있어서는 이견은 없을 것이다. 규격화된 정형 데이터의 경우에도 꼭 RDBMS를 써야 한다는 법도 없고 NoSQL \xa0기반의 DBMS를 이용하여 정형 데이터를 다룰 수도 있다. 결국 사용하고자 하는 데이터에 따라서 DBMS를 어떤 것을 선택하는가를 결정하면 된다. 하지만 DBMS의 종류와 함께 고민해야 할 부분이 안정성 및 서비스 지원 부분인데 직접 관리자가 모든 관리 및 지원을 해야 하는 기존 DBMS 구축 방식보다는 좀 더 데이터 관리 업무에 집중할 수 있게 기반을 제공해주는 IBM의 Cloudant가 기업 입장에서 좀 더 효과적으로 데이터 업무를 할 수 있게 도움을 준다는 점에서 더 좋지 않을까 하는 생각은 해본다.</p>\n<p><br></p>\n<p>IBM의 Cloudant에 대해서 좀 더 자세히 알고 싶다면 [<a href="http://www-01.ibm.com/software/kr/data/cloudant/index.html?S_TACT=C42600HW&amp;amp;iio=panalytics&amp;amp;cmp=c4260&amp;amp;ct=c42600hw&amp;amp;cr=blog&amp;amp;cm=s&amp;amp;csot=-&amp;amp;ccy=-&amp;amp;cpb=-&amp;amp;cd=-">여기</a>]를 방문해보고 내용을 확인해보면 좋을 듯 싶다.\xa0또, 50GB 무료체험도 할 수 있으니 참고하길 바란다. 최근에는 계정 생성시 등록한 이메일이나 전화로 계정 생성 절차를 안내해 준다고 하니 많이 사용해 보길 바란다.</p>\n<p><br></p>\n<p>&quot;이 포스팅은 한국 IBM 소프트웨어의 의뢰로 원고료를 받고 작성되었습니다.&quot;</p><div>\n</div><div>\n<a target="_blank" href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.ko">\n<img alt="저작자 표시" src="http://i1.daumcdn.net/cfs.tistory/resource/1949/static/admin/editor/ccl_black01.png">\n<img alt="비영리" src="http://i1.daumcdn.net/cfs.tistory/resource/1949/static/admin/editor/ccl_black02.png">\n<img alt="변경 금지" src="http://i1.daumcdn.net/cfs.tistory/resource/1949/static/admin/editor/ccl_black03.png">\n\n</a>\n</div>\n<div>\n<iframe src="http://www.facebook.com/plugins/like.php?href=http://poem23.com/3048&amp;layout=standard&amp;show_faces=true&amp;width=310&amp;action=like&amp;font=tahoma&amp;colorscheme=light&amp;height=65"></iframe>\n</div>\n<fieldset><legend><span><strong>크리에이티브 커먼즈 라이선스</strong></span></legend><div><a target="_blank" rel="license" href="http://creativecommons.org/licenses/by-nc-nd/2.0/kr/"><img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc-nd/2.0/kr/88x31.png"></a></div><div>이 저작물은 <a target="_blank" rel="license" href="http://creativecommons.org/licenses/by-nc-nd/2.0/kr/">크리에이티브 커먼즈 코리아 저작자표시-비영리-변경금지 2.0 대한민국 라이선스</a>에 따라 이용하실 수 있습니다.\n\n</div></fieldset>',
+        'direction': 'ltr'
+      },
+      'author': '학주니',
+      'title': 'IBM Cloudant DBaaS 서비스의 특징 및 장점',
+      'engagement': 92,
+      'id': 'ZKE5jiWp92PIqHBkvJ+dHVLTRvsPi8usGwcl6O+fBkA=_1529cc221f1:335adfe:bc27e115',
+      'origin': {
+        'htmlUrl': 'http://poem23.com/',
+        'title': '학주니닷컴',
+        'streamId': 'feed/http://poem23.com/rss'
+      },
+      'visual': {
+        'processor': 'feedly-nikon-v3.1',
+        'url': 'http://cfile10.uf.tistory.com/image/2267214656A5BB7C083EEE',
+        'contentType': 'image/jpeg',
+        'width': 638,
+        'height': 479
+      },
+      'alternate': [
+        {
+          'href': 'http://poem23.com/3048',
+          'type': 'text/html'
+        }
+      ],
+      'keywords': [
+        'Cloud service',
+        'Cloudant',
+        'db',
+        'DBaaS',
+        'DBMS',
+        'IBM',
+        'IBM Cloudant',
+        'NoSQL',
+        '데이터베이스',
+        '데이터베이스 관리 시스템',
+        '클라우드'
+      ],
+      'crawled': 1454328914417,
+      'unread': True,
+      'categories': [
+        {
+          'id': 'user/c8bd8162-a7b6-475c-b7b6-968b72e84fd0/category/2014IT',
+          'label': '2014IT'
+        }
+      ],
+      'fingerprint': 'f4cc014e',
+      'originId': 'http://poem23.com/3048',
+      'published': 1454328831000,
+      'engagementRate': 1.8
+    },
+    {
+      'summary': {
+        'content': "'난방 열사' 배우 김부선이 페이스북 계정을 통해서 20대 총선 출마를 선언했다. 소속당은 없고 '무소속' 이다. 김부선은 페이스북을 통해서 조선에서 가장 섹시하고 건강한 정당을 만들 것이며 공약으로는 '반값 관리비와 공동아파트 정원, 비리 없는 투명한 관리비 회계에 대한 홈페이지를 개설하여 실시간 공개' 를 선거 공약으로 밝혔다. 김부선 국회의원 출마선언 합니다무소속 입니다 조선에서 가장 쎅씨하고 건강한 정당을 만들겠습니다벗님들도와주십시요어디다..",
+        'direction': 'ltr'
+      },
+      'author': 'T.B',
+      'title': "김부선 총선 출마 선언 '반값 관리비' 공약",
+      'engagement': 1,
+      'id': 'Crcr2eqVGmgWOWLVnlUU+DsOKuLDLQ5nDezY/QbFMVQ=_1529c96dec6:323be24:bc27e115',
+      'origin': {
+        'htmlUrl': 'http://ryueyes11.tistory.com/',
+        'title': 'TB의 SNS 이야기',
+        'streamId': 'feed/http://ryueyes11.tistory.com/rss'
+      },
+      'alternate': [
+        {
+          'href': 'http://ryueyes11.tistory.com/7482',
+          'type': 'text/html'
+        }
+      ],
+      'keywords': [
+        'Politics',
+        '20대총선',
+        '김부선',
+        '난방열사',
+        '반값관리비',
+        '이재명'
+      ],
+      'crawled': 1454326079174,
+      'unread': True,
+      'categories': [
+        {
+          'id': 'user/c8bd8162-a7b6-475c-b7b6-968b72e84fd0/category/2014IT',
+          'label': '2014IT'
+        }
+      ],
+      'fingerprint': '77dd69e3',
+      'originId': 'http://ryueyes11.tistory.com/7482',
+      'published': 1454325644000,
+      'recrawled': 1454329682460
+    },
+    {
+      'summary': {
+        'content': "샤오미의 차세대 플래그십 기기 미 5(Mi 5)가 중국 춘절이후 2월 24일 공개 될 것으로 예상되는 가운데 '핫 한' 루머가 제기됐다. 최신 루머로, 샤오미의 미 5에서 '윈도우 10 모바일 버전' 이 공개될 것이라는 루머다. 이와 관련된 정황으로는 샤오미는 미 4(Mi 4)와 미 패드 2(Mi Pad 2) 64GB 모델에 샤오미의 커스터마이징 안드로이드 스킨 MIUI와 함께 윈도우 10을 지원했다. 미 4는 윈도우 모바일에 특화된 기기는 아니지..",
+        'direction': 'ltr'
+      },
+      'author': 'T.B',
+      'title': '루머: 샤오미 미 5 윈도우10 모바일과 안드로이드 둘 다 쓸 수 있을 것',
+      'id': 'Crcr2eqVGmgWOWLVnlUU+DsOKuLDLQ5nDezY/QbFMVQ=_1529c96dec6:323be23:bc27e115',
+      'origin': {
+        'htmlUrl': 'http://ryueyes11.tistory.com/',
+        'title': 'TB의 SNS 이야기',
+        'streamId': 'feed/http://ryueyes11.tistory.com/rss'
+      },
+      'alternate': [
+        {
+          'href': 'http://ryueyes11.tistory.com/7481',
+          'type': 'text/html'
+        }
+      ],
+      'keywords': [
+        'Xiaomi',
+        'miui',
+        '모바일',
+        '미 5',
+        '샤오미',
+        '안드로이드',
+        '윈도우10모바일'
+      ],
+      'crawled': 1454326079174,
+      'unread': True,
+      'categories': [
+        {
+          'id': 'user/c8bd8162-a7b6-475c-b7b6-968b72e84fd0/category/2014IT',
+          'label': '2014IT'
+        }
+      ],
+      'fingerprint': '1478040c',
+      'originId': 'http://ryueyes11.tistory.com/7481',
+      'published': 1454323896000
+    }
+  ],
+  'updated': 1454331443753
+}
