@@ -100,8 +100,8 @@ def makeFile(name ,seq ,category):
 
         print_format ("\"isLivestream\":%s," %("true"))
         print_format ("\"youtubeUrl\":\"%s\"," %(""))
-        print_format ("\"tags\": [\"%s\",\"TYPE_SESSIONS\"]," %(item['categories'][0]['label'].upper()))
-        print_format ("\"mainTag\":\"%s\"," %(item['categories'][0]['label'].upper()))
+        print_format ("\"tags\": [\"THEME_%s\",\"THEME_Tistory\"]," %(item['categories'][0]['label'].upper()))
+        print_format ("\"mainTag\":\"THEME_%s\"," %(item['categories'][0]['label'].upper()))
         print_format ("\"hashtag\":\"%s\"," %("tistory"))
         print_format ("\"color\":\"%s\"," %("#ffffff"))
         # author = item['author'];
@@ -122,7 +122,7 @@ def makeFile(name ,seq ,category):
         cnt += 1
 
     print_format ("]")
-    print_format(", \"tags\":[ { \"category\":\"THEME\", \"tag\":\"THEME_Tistory\", \"name\":\"%s\", \"original_id\":\"tag_theme_blog\", \"abstract\":\"\", \"order_in_category\":4 } ] }" %(item['categories'][0]['label'].upper()))
+    print_format(", \"tags\":[ { \"category\":\"THEME\", \"tag\":\"THEME_%s\", \"name\":\"%s\", \"original_id\":\"tag_theme_blog\", \"abstract\":\"\", \"order_in_category\":4 } ] }" %(item['categories'][0]['label'].upper() ,item['categories'][0]['label'].upper()) )
     f.close()
 
 makeFile("../static/it_v",1, cates[0])
