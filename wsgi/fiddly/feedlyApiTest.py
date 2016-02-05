@@ -39,8 +39,8 @@ access_token=data['access_token']
 cates=data['category']
 client = get_feedly_client(access_token)
 
-# categoryList = client.get_user_categories(access_token)
-# print(categoryList)
+categoryList = client.get_user_categories(access_token)
+print(categoryList)
 
 
 # item = client.get_feed_content(access_token,'feed/http://lucy7599.tistory.com/rss')
@@ -102,7 +102,7 @@ def makeFile(name ,seq ,category):
         print_format ("\"youtubeUrl\":\"%s\"," %(""))
         print_format ("\"tags\": [\"THEME_%s\",\"THEME_Tistory\"]," %(item['categories'][0]['label'].upper()))
         print_format ("\"mainTag\":\"THEME_%s\"," %(item['categories'][0]['label'].upper()))
-        print_format ("\"hashtag\":\"%s\"," %("tistory"))
+        print_format ("\"hashtag\":\"%s\"," %("uuu"))
         print_format ("\"color\":\"%s\"," %("#ffffff"))
         # author = item['author'];
         # if author != None:
