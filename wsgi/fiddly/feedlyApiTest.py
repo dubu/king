@@ -122,7 +122,7 @@ def makeFile(name ,seq ,category):
         cnt += 1
 
     print_format ("]")
-    print_format(", \"tags\":[ { \"category\":\"THEME\", \"tag\":\"%s\", \"name\":\"Tistory\", \"original_id\":\"tag_theme_blog\", \"abstract\":\"\", \"order_in_category\":4 } ] }" %(item['categories'][0]['label'].upper()))
+    print_format(", \"tags\":[ { \"category\":\"THEME\", \"tag\":\"THEME_Tistory\", \"name\":\"%s\", \"original_id\":\"tag_theme_blog\", \"abstract\":\"\", \"order_in_category\":4 } ] }" %(item['categories'][0]['label'].upper()))
     f.close()
 
 makeFile("../static/it_v",1, cates[0])
