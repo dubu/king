@@ -133,7 +133,7 @@ def makeFile(name ,seq ,category):
         cnt += 1
 
     print_format ("]")
-    print_format(", \"tags\":[ { \"category\":\"THEME\", \"tag\":\"THEME_%s\", \"name\":\"%s\", \"original_id\":\"tag_theme_blog\", \"abstract\":\"\", \"order_in_category\":4 } ] }" %(item['categories'][0]['label'].upper() ,item['categories'][0]['label'].upper()) )
+    print_format(", \"tags\":[ { \"category\":\"THEME\", \"tag\":\"THEME_%s\", \"name\":\"%s\", \"original_id\":\"tag_theme_blog\", \"abstract\":\"\", \"order_in_category\":4 } , { \"category\":\"THEME\", \"tag\":\"THEME_ALL\", \"name\":\"ALL\", \"original_id\":\"tag_theme_all\", \"abstract\":\"\", \"order_in_category\":1 }] }" %(item['categories'][0]['label'].upper() ,item['categories'][0]['label'].upper()) )
     f.close()
 
 
