@@ -77,3 +77,5 @@ You should be now able to login at:
 	http://django-$yournamespace.rhcloud.com/admin/
 
 ssh 56af85134423f891a80003f9@king-dubu.cloudsc.kr
+
+ssh 56af85134423f891a80003f9@king-dubu.cloudsc.kr 'chmod -x /var/lib/openshift/56af85134423f891a80003f9/app-root/runtime/repo/.openshift/cron/hourly/batch.sh'

@@ -111,7 +111,7 @@ def makeFile(name ,seq ,category):
 
         print_format ("\"isLivestream\":%s," %("true"))
         print_format ("\"youtubeUrl\":\"%s\"," %(""))
-        print_format ("\"tags\": [\"THEME_%s\",\"ALL\"]," %(item['categories'][0]['label'].upper()))
+        print_format ("\"tags\": [\"THEME_%s\",\"THEME_ALL\"]," %(item['categories'][0]['label'].upper()))
         print_format ("\"mainTag\":\"THEME_%s\"," %(item['categories'][0]['label'].upper()))
         print_format ("\"hashtag\":\"%s\"," %("uuu"))
         print_format ("\"color\":\"%s\"," %("#ffffff"))
