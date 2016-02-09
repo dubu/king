@@ -47,15 +47,17 @@ print(categoryList)
 # item = client.get_feed_content(access_token,'feed/http://lucy7599.tistory.com/rss')
 # print(item)
 
+
+
 def makeFile(name ,seq ,category):
 
     def getFileName(name, seq):
 
-        return name + str(seq) + ".json";
-
         if os.path.isfile(name + str(seq) + ".json"):
             return getFileName(name, seq+1)
         else:
+            global g_seq
+            g_seq = seq
             return name + str(seq) + ".json";
 
     content = client.get_feed_content(access_token,category,unreadOnly=True)
@@ -134,8 +136,13 @@ def makeFile(name ,seq ,category):
     print_format(", \"tags\":[ { \"category\":\"THEME\", \"tag\":\"THEME_%s\", \"name\":\"%s\", \"original_id\":\"tag_theme_blog\", \"abstract\":\"\", \"order_in_category\":4 } ] }" %(item['categories'][0]['label'].upper() ,item['categories'][0]['label'].upper()) )
     f.close()
 
+
 makeFile("../static/it_v",1, cates[0])
 makeFile("../static/media_v",1,cates[1])
 makeFile("../static/life_v",1,cates[2])
 makeFile("../static/enter_v",1,cates[3])
 
+
+ff= open("../static/manifest_v1.json", 'w', encoding='utf-8')
+ff.write("{\"format\":\"iosched-json-v1\",\"data_files\":[\"enter_v%d.json\",\"it_v%d.json\",\"life_v%d.json\",\"media_v%d.json\"]}" %(g_seq,g_seq,g_seq,g_seq))
+ff.close()
