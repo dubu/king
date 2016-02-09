@@ -51,7 +51,6 @@ print(categoryList)
 def makeFile(name ,seq ,category):
 
     def getFileName(name, seq):
-        return name + str(seq) + ".json";
 
         if os.path.isfile(name + str(seq) + ".json"):
             return getFileName(name, seq+1)
