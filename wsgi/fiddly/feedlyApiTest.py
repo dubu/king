@@ -11,6 +11,7 @@ from datetime import *
 from dateutil.parser import *
 from bs4 import BeautifulSoup
 import datetime
+import copy
 
 from feedly import FeedlyClient
 
@@ -47,16 +48,16 @@ print(categoryList)
 # item = client.get_feed_content(access_token,'feed/http://lucy7599.tistory.com/rss')
 # print(item)
 
-
-
 def makeFile(name ,seq ,category):
 
     def getFileName(name, seq):
+        return name + str(seq) + ".json";
 
         if os.path.isfile(name + str(seq) + ".json"):
             return getFileName(name, seq+1)
         else:
             global g_seq
+            g_seq = 1
             g_seq = seq
             return name + str(seq) + ".json";
 
@@ -79,7 +80,29 @@ def makeFile(name ,seq ,category):
         print_format ("\"url\":\"%s\"," %(item['alternate'][0]['href']))
         print_format ("\"title\":\"%s\"," %(item['title'].replace("\"","\\\"")))
 
-        description = cgi.escape(item['summary']['content'], True).replace("\n","\\n")
+
+        # fix image width
+        soup = BeautifulSoup(item['summary']['content'], "lxml")
+        for img  in soup.findAll("img")  :
+            img["width"] = "50%"
+            img["height"] = ""
+
+        description = str(soup)
+
+        description = cgi.escape(description , True).replace("\n","\\n")
+
+        # remove iframe
+        ifame_url = re.search('&lt;iframe(.*?)/iframe&gt;', description)
+        if ifame_url != None:
+            description  = description.replace(ifame_url.group(0),"")
+
+        # fix image width
+        soup = BeautifulSoup(item['summary']['content'], "lxml")
+        for img  in soup.findAll("img")  :
+            img = BeautifulSoup(str(img), "lxml").body.contents[0]
+            img["width"] = "50%"
+            img["height"] = ""
+
         print_format ("\"description\":\"%s\"," %(description))
 
         # startTimestamp = dateutil.parser.parse("02-02-2016").strftime('%Y-%m-%dT%H:%M:%SZ')
