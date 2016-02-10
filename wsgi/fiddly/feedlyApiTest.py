@@ -89,7 +89,7 @@ def makeFile(name ,seq ,category):
             if img.get("id") and re.search("ccl-",img.get("id")) :
                 print("except ccl mark")
             else :
-                img["width"] = "50%"
+                img["width"] = "100%"
                 img["height"] = ""
 
         description = str(soup)
