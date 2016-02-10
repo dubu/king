@@ -61,7 +61,10 @@ def makeFile(name ,seq ,category):
             return name + str(seq) + ".json";
 
     content = client.get_feed_content(access_token,category,unreadOnly=True)
-    # print(content)
+    if content.get("errorCode") == 503 :
+        exit();
+
+    print(content)
 
     fname = getFileName(name, seq)
     print(fname)
@@ -83,11 +86,13 @@ def makeFile(name ,seq ,category):
         # fix image width
         soup = BeautifulSoup(item['summary']['content'], "lxml")
         for img  in soup.findAll("img")  :
-            img["width"] = "50%"
-            img["height"] = ""
+            if img.get("id") and re.search("ccl-",img.get("id")) :
+                print("except ccl mark")
+            else :
+                img["width"] = "50%"
+                img["height"] = ""
 
         description = str(soup)
-
         description = cgi.escape(description , True).replace("\n","\\n")
 
         # remove iframe
