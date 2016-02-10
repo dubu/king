@@ -26,7 +26,7 @@ soup = BeautifulSoup(json_data, "lxml")
 # print(soup.findAll("img") )
 for img  in soup.findAll("img")  :
 
-    if img.get("id") and re.search("ccl-",img.get("id")) :
+    if img.get("src") and re.search("ccl_",img.get("src")) :
         print(str(img))
     else :
         img["width"] = "50%"
