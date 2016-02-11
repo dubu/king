@@ -150,7 +150,10 @@ def makeFile(name ,seq ,category):
 
         print_format ("\"speakers\":[\"%s\"]," %("dubu"))
 
-        print_format ("\"room\":\"%s\"," %(""))
+        if(item.get('author')) :
+            print_format ("\"room\":\"%s\"," %(item['author']))
+        else :
+            print_format ("\"room\":\"%s\"," %("(알수없음)"))
         print_format ("\"captionsUrl\":\"%s\"" %(""))
 
         if cnt < len(content['items']) - 1:
