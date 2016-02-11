@@ -171,6 +171,7 @@ makeFile("../static/it_v",1, cates[0])
 makeFile("../static/media_v",1,cates[1])
 makeFile("../static/life_v",1,cates[2])
 makeFile("../static/enter_v",1,cates[3])
+makeFile("../static/short_v",1,cates[3])
 
 
 ff= open("../static/manifest_v1.json", 'w', encoding='utf-8')
