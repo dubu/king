@@ -170,11 +170,7 @@ def makeFile(name ,seq ,category):
         #     print_format ("\"speakers\":[\"%s\"]," %(""))
 
         print_format ("\"speakers\":[\"%s\"]," %("dubu"))
-
-        if(item.get('author')) :
-            print_format ("\"room\":\"%s\"," %(item['author']))
-        else :
-            print_format ("\"room\":\"%s\"," %(""))
+        print_format ("\"room\":\"%s\"," %(item['id']))
         print_format ("\"captionsUrl\":\"%s\"" %(""))
 
         if cnt < len(content['items']) - 1:
