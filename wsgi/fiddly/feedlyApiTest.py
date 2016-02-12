@@ -12,6 +12,7 @@ from dateutil.parser import *
 from bs4 import BeautifulSoup
 import datetime
 import copy
+import pytz
 
 from feedly import FeedlyClient
 
@@ -117,8 +118,6 @@ def makeFile(name ,seq ,category):
         #cwTimestamp = dateutil.parser.parse("02-02-2016").strftime('%Y-%m-%dT%H:%M:%SZ')
 
 
-
-        import pytz, datetime
         local = pytz.timezone ("Asia/Seoul")
         naive = datetime.datetime.fromtimestamp(int(tmpTimestamp))
         local_dt = local.localize(naive, is_dst=None)
