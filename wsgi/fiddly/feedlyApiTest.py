@@ -133,7 +133,7 @@ def makeFile(name ,seq ,category):
 
         if(soup.findAll("img")):
             if not re.search("ccl_",soup.findAll("img")[0]["src"]) :
-                print_format ("\"photoUrl\":\"%s\"," %(soup.findAll("img")[0]["src"]))
+                print_format ("\"photoUrl\":\"%s\"," %(soup.findAll("img")[0]["src"].replace("/image/","/T120x120/")))
         else:
             print_format ("\"photoUrl\":\"%s\"," %(""))
 
@@ -178,10 +178,10 @@ def makeFile(name ,seq ,category):
 
 
 makeFile("../static/it_v",1, cates[0])
-makeFile("../static/media_v",1,cates[1])
-makeFile("../static/life_v",1,cates[2])
-makeFile("../static/enter_v",1,cates[3])
-makeFile("../static/short_v",1,cates[4])
+# makeFile("../static/media_v",1,cates[1])
+# makeFile("../static/life_v",1,cates[2])
+# makeFile("../static/enter_v",1,cates[3])
+# makeFile("../static/short_v",1,cates[4])
 
 
 ff= open("../static/manifest_v1.json", 'w', encoding='utf-8')
