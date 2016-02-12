@@ -134,7 +134,8 @@ def makeFile(name ,seq ,category):
         # img =  soup.findAll("img")[0]
 
         if(soup.findAll("img")):
-            print_format ("\"photoUrl\":\"%s\"," %(soup.findAll("img")[0]["src"]))
+            if not re.search("ccl_",soup.findAll("img")[0]["src"]) :
+                print_format ("\"photoUrl\":\"%s\"," %(soup.findAll("img")[0]["src"]))
         else:
             print_format ("\"photoUrl\":\"%s\"," %(""))
 
