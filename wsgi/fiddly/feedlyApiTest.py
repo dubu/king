@@ -117,12 +117,10 @@ def makeFile(name ,seq ,category):
         #cwTimestamp =datetime.datetime.fromtimestamp(int(tmpTimestamp)).strftime('%Y-%m-%dT%H:%M:%SZ')
         #cwTimestamp = dateutil.parser.parse("02-02-2016").strftime('%Y-%m-%dT%H:%M:%SZ')
 
-
         local = pytz.timezone ("Asia/Seoul")
         naive = datetime.datetime.fromtimestamp(int(tmpTimestamp))
         local_dt = local.localize(naive, is_dst=None)
-        utc_dt = local_dt.astimezone (pytz.utc)
-
+        utc_dt = local_dt.astimezone (pytz.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
 
         print_format ("\"startTimestamp\":\"%s\"," %(utc_dt))
         print_format ("\"endTimestamp\":\"%s\"," %(utc_dt))
@@ -165,7 +163,7 @@ def makeFile(name ,seq ,category):
         if(item.get('author')) :
             print_format ("\"room\":\"%s\"," %(item['author']))
         else :
-            print_format ("\"room\":\"%s\"," %("(알수없음)"))
+            print_format ("\"room\":\"%s\"," %(""))
         print_format ("\"captionsUrl\":\"%s\"" %(""))
 
         if cnt < len(content['items']) - 1:
