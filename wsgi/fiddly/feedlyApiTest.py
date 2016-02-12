@@ -77,7 +77,18 @@ def makeFile(name ,seq ,category):
 
     cnt = 0
     print_format ("{\"sessions\": [")
+
+    roomList = []
     for item in content['items']:
+
+        room = {}
+        room["id"] = item['originId']
+        if(item.get('author')) :
+            room["name"] = item['author']
+        else:
+            room["name"] = ""
+        roomList.append(room)
+
         print_format ("{")
         print_format ("\"id\":\"%s\"," %(item['originId']))
         print_format ("\"url\":\"%s\"," %(item['alternate'][0]['href']))
@@ -173,16 +184,31 @@ def makeFile(name ,seq ,category):
         cnt += 1
 
     print_format ("]")
-    print_format(", \"tags\":[ { \"category\":\"THEME\", \"tag\":\"THEME_%s\", \"name\":\"%s\", \"original_id\":\"tag_theme_blog\", \"abstract\":\"\", \"order_in_category\":4 } , { \"category\":\"THEME\", \"tag\":\"THEME_ALL\", \"name\":\"ALL\", \"original_id\":\"tag_theme_all\", \"abstract\":\"\", \"order_in_category\":1 }] }" %(item['categories'][0]['label'].upper() ,item['categories'][0]['label'].upper()) )
+    print_format(", \"tags\":[ { \"category\":\"THEME\", \"tag\":\"THEME_%s\", \"name\":\"%s\", \"original_id\":\"tag_theme_blog\", \"abstract\":\"\", \"order_in_category\":4 } , { \"category\":\"THEME\", \"tag\":\"THEME_ALL\", \"name\":\"ALL\", \"original_id\":\"tag_theme_all\", \"abstract\":\"\", \"order_in_category\":1 }]" %(item['categories'][0]['label'].upper() ,item['categories'][0]['label'].upper()) )
+
+    print_format(",\"rooms\": [")
+    cnt = 0
+    for r in roomList :
+        print_format("{")
+        tmplet  ='''
+            "id": "%s",
+            "name": "%s",
+            "original_id": "%s"
+        '''
+        print_format(tmplet %(r.get("id") ,r.get("name"),r.get("id") ))
+        if cnt < len(roomList) - 1:
+            print_format("},")
+        else:
+            print_format("}")
+        cnt += 1
+    print_format("]}")
     f.close()
 
-
 makeFile("../static/it_v",1, cates[0])
-# makeFile("../static/media_v",1,cates[1])
-# makeFile("../static/life_v",1,cates[2])
-# makeFile("../static/enter_v",1,cates[3])
-# makeFile("../static/short_v",1,cates[4])
-
+makeFile("../static/media_v",1,cates[1])
+makeFile("../static/life_v",1,cates[2])
+makeFile("../static/enter_v",1,cates[3])
+makeFile("../static/short_v",1,cates[4])
 
 ff= open("../static/manifest_v1.json", 'w', encoding='utf-8')
 ff.write("{\"format\":\"iosched-json-v1\",\"data_files\":[\"enter_v%d.json\",\"it_v%d.json\",\"life_v%d.json\",\"media_v%d.json\",\"short_v%d.json\"]}" %(g_seq,g_seq,g_seq,g_seq,g_seq))
