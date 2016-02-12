@@ -64,7 +64,7 @@ def makeFile(name ,seq ,category):
     if content.get("errorCode") == 503 :
         exit();
 
-    print(content)
+    # print(content)
 
     fname = getFileName(name, seq)
     print(fname)
