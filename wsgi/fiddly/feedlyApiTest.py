@@ -113,7 +113,7 @@ def makeFile(name ,seq ,category):
         # startTimestamp = datetime.datetime.fromtimestamp(item['crawled'][:3]).strftime('%Y-%m-%dT%H:%M:%SZ')
         tmpTimestamp =  str(item['crawled'])[:-3]
         # print(tmpTimestamp)
-        cwTimestamp =datetime.datetime.fromtimestamp(int(tmpTimestamp)).strftime('%Y-%m-%dT%H:%M:%SZ')
+        cwTimestamp =datetime.datetime.fromtimestamp(int(tmpTimestamp)).utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
         #cwTimestamp = dateutil.parser.parse("02-02-2016").strftime('%Y-%m-%dT%H:%M:%SZ')
 
         print_format ("\"startTimestamp\":\"%s\"," %(cwTimestamp))
