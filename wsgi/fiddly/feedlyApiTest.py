@@ -143,10 +143,11 @@ def makeFile(name ,seq ,category):
         # img =  soup.findAll("img")[0]
 
         if(soup.findAll("img")):
-            if not re.search("ccl_",soup.findAll("img")[0]["src"]) and re.search("uf.tistory.com",soup.findAll("img")[0]["src"]) :
-                print_format ("\"photoUrl\":\"%s\"," %(soup.findAll("img")[0]["src"].replace("/image/","/T250x250/")))
-            else:
-                print_format ("\"photoUrl\":\"%s\"," %(soup.findAll("img")[0]["src"]))
+            if not re.search("ccl_",soup.findAll("img")[0]["src"]):
+                if re.search("uf.tistory.com",soup.findAll("img")[0]["src"]) :
+                    print_format ("\"photoUrl\":\"%s\"," %(soup.findAll("img")[0]["src"].replace("/image/","/T250x250/")))
+                else:
+                    print_format ("\"photoUrl\":\"%s\"," %(soup.findAll("img")[0]["src"]))
         else:
             print_format ("\"photoUrl\":\"%s\"," %(""))
 
