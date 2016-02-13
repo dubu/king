@@ -1,5 +1,24 @@
 {"sessions": [
 {
+"id":"http://www.goham20.com/?p=48575",
+"url":"http://www.goham20.com/48575",
+"title":"[언론유감] 여자는 딱 ‘그 정도’가 겸손한 거다?",
+"description":"&lt;html&gt;&lt;body&gt;&lt;p&gt;[언론유감 시즌4] 그동안 고함20은 기성언론을 향한 비판의 날을 계속해서 세워왔다. 새 언론유감 ...&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;",
+"startTimestamp":"2016-02-13T02:15:49Z",
+"endTimestamp":"2016-02-13T02:15:49Z",
+"isFeatured":false,
+"photoUrl":"",
+"isLivestream":true,
+"youtubeUrl":"",
+"tags": ["THEME_SHORT"],
+"mainTag":"THEME_SHORT",
+"hashtag":"uuu",
+"color":"#ffffff",
+"speakers":["dubu"],
+"room":"http://www.goham20.com/?p=48575",
+"captionsUrl":""
+},
+{
 "id":"http://blog.naver.com/josephkwon/220625545258",
 "url":"http://blog.naver.com/josephkwon/220625545258",
 "title":"망중한-올해 첫 휴가의 첫날",
@@ -357,29 +376,17 @@
 "speakers":["dubu"],
 "room":"http://www.neoearly.net/2468419",
 "captionsUrl":""
-},
-{
-"id":"http://haejukdl.blog.me/220621576295",
-"url":"http://haejukdl.blog.me/220621576295",
-"title":"불락지피 공연 초대이벤트 대학로 연극 셜록홈즈",
-"description":"&lt;html&gt;&lt;body&gt;&lt;p&gt;불락지피 블로그 이웃 공연 초대 이벤트입니다.이번 공연은 드라마, 범죄 추리 스릴러, 코미디가 담긴 연극 '셜록 홈즈'입니다.영국의 의사이자 소설가 '아서 코난 도일'의 장편소설 &amp;lt;공포의 계곡&amp;gt;을 각색한 작품으로,수상한 편지 한 통이 도착하면서 이야기는 전개됩니다.흥미진진한 이야기 전개와 끝까지 긴장의 끊을 놓을 수 없는 반전이 펼쳐지는추리소설의 매력에 빠질 수 있는 연극입니다. 공연명 : 연극 '셜록홈즈'공연장 : 대학로 스카이씨어터공연시간 : 95분제작 : 휴먼컴퍼니초대일자2월 21일 (일) 오후 3시 - 5쌍 (1인 2매 총 10매) / 오후 6시 - 5쌍 (1인 2매 총 10매)2월 23일 (화) 오후 5시 - 5쌍 (1인 2매 총 10매) / 오후.......&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;",
-"startTimestamp":"2016-02-12T03:19:05Z",
-"endTimestamp":"2016-02-12T03:19:05Z",
-"isFeatured":false,
-"photoUrl":"",
-"isLivestream":true,
-"youtubeUrl":"",
-"tags": ["THEME_SHORT"],
-"mainTag":"THEME_SHORT",
-"hashtag":"uuu",
-"color":"#ffffff",
-"speakers":["dubu"],
-"room":"http://haejukdl.blog.me/220621576295",
-"captionsUrl":""
 }
 ]
 , "tags":[ { "category":"THEME", "tag":"THEME_SHORT", "name":"SHORT", "original_id":"tag_theme_blog", "abstract":"", "order_in_category":4 } , { "category":"THEME", "tag":"THEME_ALL", "name":"ALL", "original_id":"tag_theme_all", "abstract":"", "order_in_category":1 }]
 ,"rooms": [
+{
+
+            "id": "http://www.goham20.com/?p=48575",
+            "name": "참새",
+            "original_id": "http://www.goham20.com/?p=48575"
+        
+},
 {
 
             "id": "http://blog.naver.com/josephkwon/220625545258",
@@ -511,13 +518,6 @@
             "id": "http://www.neoearly.net/2468419",
             "name": "라디오키즈",
             "original_id": "http://www.neoearly.net/2468419"
-        
-},
-{
-
-            "id": "http://haejukdl.blog.me/220621576295",
-            "name": "haejukdl",
-            "original_id": "http://haejukdl.blog.me/220621576295"
         
 }
 ]}
