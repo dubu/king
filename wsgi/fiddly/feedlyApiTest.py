@@ -205,6 +205,7 @@ makeFile("../static/media_v",1,cates[1])
 makeFile("../static/life_v",1,cates[2])
 makeFile("../static/enter_v",1,cates[3])
 makeFile("../static/short_v",1,cates[4])
+makeFile("../static/fun_v",1,cates[5])
 
 ff= open("../static/manifest_v1.json", 'w', encoding='utf-8')
 ff.write("{\"format\":\"iosched-json-v1\",\"data_files\":[\"enter_v%d.json\",\"it_v%d.json\",\"life_v%d.json\",\"media_v%d.json\",\"short_v%d.json\"]}" %(g_seq,g_seq,g_seq,g_seq,g_seq))
