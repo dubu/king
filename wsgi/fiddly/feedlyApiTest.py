@@ -172,7 +172,7 @@ def makeFile(name ,seq ,category):
         # else:
         #     print_format ("\"speakers\":[\"%s\"]," %(""))
 
-        print_format ("\"speakers\":[\"%s\"]," %("dubu"))
+        print_format ("\"speakers\":[\"%s\"]," %(""))
         print_format ("\"room\":\"%s\"," %(item['originId']))
         print_format ("\"captionsUrl\":\"%s\"" %(""))
 
