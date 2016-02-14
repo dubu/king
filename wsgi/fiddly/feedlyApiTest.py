@@ -98,7 +98,7 @@ def makeFile(name ,seq ,category):
         # fix image width
         soup = BeautifulSoup(item['summary']['content'], "lxml")
         for img  in soup.findAll("img")  :
-            if img.get("src") and re.search("ccl_",img.get("src")) :
+            if img.get("src") and re.search("ccl_||creativecommons",img.get("src")) :
                 print("except ccl mark")
             else :
                 img["width"] = "100%"
