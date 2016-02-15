@@ -194,7 +194,7 @@ def makeFile(name ,seq ,category):
             "name": "%s",
             "original_id": "%s"
         '''
-        print_format(tmplet %(r.get("id") ,r.get("name"),r.get("id") ))
+        print_format(tmplet %(r.get("id") ,r.get("name").replace("\"","\\\""),r.get("id") ))
         if cnt < len(roomList) - 1:
             print_format("},")
         else:
