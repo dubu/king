@@ -92,8 +92,10 @@ def makeFile(name ,seq ,category):
         print_format ("{")
         print_format ("\"id\":\"%s\"," %(item['originId']))
         print_format ("\"url\":\"%s\"," %(item['alternate'][0]['href']))
-        print_format ("\"title\":\"%s\"," %(item['title'].replace("\"","\\\"")))
-
+        if item.get('title') :
+            print_format ("\"title\":\"%s\"," %(item['title'].replace("\"","\\\"")))
+        else :
+            print_format ("\"title\":\"%s\"," %(""))
 
         # fix image width
         soup = BeautifulSoup(item['summary']['content'], "lxml")
