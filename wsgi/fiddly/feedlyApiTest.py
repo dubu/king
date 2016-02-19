@@ -98,7 +98,12 @@ def makeFile(name ,seq ,category):
             print_format ("\"title\":\"%s\"," %(""))
 
         # fix image width
-        soup = BeautifulSoup(item['summary']['content'], "lxml")
+
+        if item.get('summary') :
+            soup = BeautifulSoup(item['summary']['content'], "lxml")
+        else :
+            soup = BeautifulSoup(item['content']['content'], "lxml")
+
         for img  in soup.findAll("img")  :
             if img.get("src") and re.search("ccl_|creativecommons",img.get("src")) :
                 print("except ccl mark")
@@ -115,7 +120,12 @@ def makeFile(name ,seq ,category):
             description  = description.replace(ifame_url.group(0),"")
 
         # fix image width
-        soup = BeautifulSoup(item['summary']['content'], "lxml")
+        # soup = BeautifulSoup(item['summary']['content'], "lxml")
+        if item.get('summary') :
+            soup = BeautifulSoup(item['summary']['content'], "lxml")
+        else :
+            soup = BeautifulSoup(item['content']['content'], "lxml")
+
         for img  in soup.findAll("img")  :
             img = BeautifulSoup(str(img), "lxml").body.contents[0]
             img["width"] = "50%"
@@ -140,7 +150,12 @@ def makeFile(name ,seq ,category):
 
         print_format ("\"isFeatured\":%s," %("false"))
 
-        soup = BeautifulSoup(item['summary']['content'], "lxml")
+        # soup = BeautifulSoup(item['summary']['content'], "lxml")
+        if item.get('summary') :
+            soup = BeautifulSoup(item['summary']['content'], "lxml")
+        else :
+            soup = BeautifulSoup(item['content']['content'], "lxml")
+
         # page_images = [image["src"] for image in soup.findAll("img")]
         # img =  soup.findAll("img")[0]
 
@@ -211,7 +226,8 @@ makeFile("../static/life_v",1,cates[2])
 makeFile("../static/enter_v",1,cates[3])
 makeFile("../static/short_v",1,cates[4])
 makeFile("../static/fun_v",1,cates[5])
+makeFile("../static/alert_v",1,cates[6])
 
 ff= open("../static/manifest_v1.json", 'w', encoding='utf-8')
-ff.write("{\"format\":\"iosched-json-v1\",\"data_files\":[\"enter_v%d.json\",\"it_v%d.json\",\"life_v%d.json\",\"media_v%d.json\",\"short_v%d.json\",\"fun_v%d.json\"]}" %(g_seq,g_seq,g_seq,g_seq,g_seq,g_seq))
+ff.write("{\"format\":\"iosched-json-v1\",\"data_files\":[\"enter_v%d.json\",\"it_v%d.json\",\"life_v%d.json\",\"media_v%d.json\",\"short_v%d.json\",\"fun_v%d.json\",\"alert_v%d.json\"]}" %(g_seq,g_seq,g_seq,g_seq,g_seq,g_seq,g_seq))
 ff.close()

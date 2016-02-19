@@ -1,0 +1,31 @@
+{
+  'unread': True,
+  'published': 1455875775000,
+  'alternate': [
+    {
+      'href': 'https://www.google.com/url?rct=j&sa=t&url=http://tenasia.hankyung.com/archives/873908&ct=ga&cd=CAIyGmVmYWEwNzViMzc0OTMyMmE6Y29tOmtvOlVT&usg=AFQjCNGpGcai-mXTUEGTOYkrUwAd52q1XA',
+      'type': 'text/html'
+    }
+  ],
+  'crawled': 1455875775000,
+  'originId': 'tag:google.com,2013:googlealerts/feed:4802301975262916997',
+  'id': '6+2+/MhLjn7uYJLt7AVrz780dhK7Q6yxGCuinO5YXzY=_152f8f55a18:a76d03:adb340e2',
+  'title': "오늘(19일) 날씨, 우수와 함께 찾아온 불청객 '미세먼지'",
+  'content': {
+    'content': "asdfasdf",
+    'direction': 'ltr'
+  },
+  'categories': [
+    {
+      'id': 'user/c8bd8162-a7b6-475c-b7b6-968b72e84fd0/category/GoogleAlert',
+      'label': 'GoogleAlert'
+    }
+  ],
+  'fingerprint': 'edde3216',
+  'updated': 1455875775000,
+  'origin': {
+    'htmlUrl': 'https://www.google.com/alerts/feeds/17197787300704122967/17020610911417442052',
+    'title': 'Google Alert - 오늘의 날씨',
+    'streamId': 'feed/https://www.google.com/alerts/feeds/17197787300704122967/17020610911417442052'
+  }
+}
