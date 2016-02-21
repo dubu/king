@@ -101,8 +101,10 @@ def makeFile(name ,seq ,category):
 
         if item.get('summary') :
             soup = BeautifulSoup(item['summary']['content'], "lxml")
-        else :
+        if item.get('content') :
             soup = BeautifulSoup(item['content']['content'], "lxml")
+        else :
+            soup = BeautifulSoup("", "lxml")
 
         for img  in soup.findAll("img")  :
             if img.get("src") and re.search("ccl_|creativecommons",img.get("src")) :
@@ -121,10 +123,11 @@ def makeFile(name ,seq ,category):
 
         # fix image width
         # soup = BeautifulSoup(item['summary']['content'], "lxml")
-        if item.get('summary') :
-            soup = BeautifulSoup(item['summary']['content'], "lxml")
-        else :
-            soup = BeautifulSoup(item['content']['content'], "lxml")
+
+        # if item.get('summary') :
+        #     soup = BeautifulSoup(item['summary']['content'], "lxml")
+        # else :
+        #     soup = BeautifulSoup(item['content']['content'], "lxml")
 
         for img  in soup.findAll("img")  :
             img = BeautifulSoup(str(img), "lxml").body.contents[0]
@@ -151,10 +154,11 @@ def makeFile(name ,seq ,category):
         print_format ("\"isFeatured\":%s," %("false"))
 
         # soup = BeautifulSoup(item['summary']['content'], "lxml")
-        if item.get('summary') :
-            soup = BeautifulSoup(item['summary']['content'], "lxml")
-        else :
-            soup = BeautifulSoup(item['content']['content'], "lxml")
+
+        # if item.get('summary') :
+        #     soup = BeautifulSoup(item['summary']['content'], "lxml")
+        # else :
+        #     soup = BeautifulSoup(item['content']['content'], "lxml")
 
         # page_images = [image["src"] for image in soup.findAll("img")]
         # img =  soup.findAll("img")[0]
