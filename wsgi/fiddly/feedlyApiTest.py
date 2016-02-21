@@ -176,7 +176,7 @@ def makeFile(name ,seq ,category):
 
         print_format ("\"isLivestream\":%s," %("true"))
         print_format ("\"youtubeUrl\":\"%s\"," %(""))
-        if item['categories'][0]['label'].upper() == "SHORT" or item['categories'][0]['label'].upper() == "ALERT":
+        if item['categories'][0]['label'].upper() == "SHORT" or item['categories'][0]['label'].upper() == "ALRAM":
             print_format ("\"tags\": [\"THEME_%s\"]," %(item['categories'][0]['label'].upper()))
         else:
             print_format ("\"tags\": [\"THEME_%s\",\"THEME_ALL\"]," %(item['categories'][0]['label'].upper()))
