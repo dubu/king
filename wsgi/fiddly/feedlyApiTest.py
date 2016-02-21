@@ -101,7 +101,7 @@ def makeFile(name ,seq ,category):
 
         if item.get('summary') :
             soup = BeautifulSoup(item['summary']['content'], "lxml")
-        if item.get('content') :
+        elif item.get('content') :
             soup = BeautifulSoup(item['content']['content'], "lxml")
         else :
             soup = BeautifulSoup(item['title'], "lxml")
