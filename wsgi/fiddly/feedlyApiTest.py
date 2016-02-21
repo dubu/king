@@ -104,7 +104,7 @@ def makeFile(name ,seq ,category):
         if item.get('content') :
             soup = BeautifulSoup(item['content']['content'], "lxml")
         else :
-            soup = BeautifulSoup("", "lxml")
+            soup = BeautifulSoup(item['title'], "lxml")
 
         for img  in soup.findAll("img")  :
             if img.get("src") and re.search("ccl_|creativecommons",img.get("src")) :
