@@ -163,7 +163,7 @@ def makeFile(name ,seq ,category):
         # page_images = [image["src"] for image in soup.findAll("img")]
         # img =  soup.findAll("img")[0]
 
-        if(soup.findAll("img")):
+        if(soup.findAll("img") and soup.findAll("img")[0].get("src")):
             if not re.search("ccl_",soup.findAll("img")[0]["src"]):
                 if re.search("uf.tistory.com",soup.findAll("img")[0]["src"]) :
                     print_format ("\"photoUrl\":\"%s\"," %(soup.findAll("img")[0]["src"].replace("/image/","/T250x250/")))
@@ -224,12 +224,12 @@ def makeFile(name ,seq ,category):
     print_format("]}")
     f.close()
 
-makeFile("../static/it_v",1, cates[0])
-makeFile("../static/media_v",1,cates[1])
-makeFile("../static/life_v",1,cates[2])
-makeFile("../static/enter_v",1,cates[3])
-makeFile("../static/short_v",1,cates[4])
-makeFile("../static/fun_v",1,cates[5])
+# makeFile("../static/it_v",1, cates[0])
+# makeFile("../static/media_v",1,cates[1])
+# makeFile("../static/life_v",1,cates[2])
+# makeFile("../static/enter_v",1,cates[3])
+# makeFile("../static/short_v",1,cates[4])
+# makeFile("../static/fun_v",1,cates[5])
 makeFile("../static/alert_v",1,cates[6])
 
 ff= open("../static/manifest_v1.json", 'w', encoding='utf-8')
