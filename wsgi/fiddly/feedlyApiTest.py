@@ -185,10 +185,11 @@ def makeFile(name ,seq ,category):
         topicCatetory = ["SHORT","NEWS", "MOVIE"]
         if item['categories'][0]['label'].upper() in topicCatetory:
             print_format ("\"tags\": [\"TOPIC_%s\"]," %(item['categories'][0]['label'].upper()))
+            print_format ("\"mainTag\":\"TOPIC_%s\"," %(item['categories'][0]['label'].upper()))
         else:
             print_format ("\"tags\": [\"THEME_%s\",\"THEME_ALL\"]," %(item['categories'][0]['label'].upper()))
+            print_format ("\"mainTag\":\"THEME_%s\"," %(item['categories'][0]['label'].upper()))
 
-        print_format ("\"mainTag\":\"THEME_%s\"," %(item['categories'][0]['label'].upper()))
         print_format ("\"hashtag\":\"%s\"," %("uuu"))
         print_format ("\"color\":\"%s\"," %("#ffffff"))
         # author = item['author'];
