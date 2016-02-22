@@ -180,10 +180,14 @@ def makeFile(name ,seq ,category):
 
         print_format ("\"isLivestream\":%s," %("true"))
         print_format ("\"youtubeUrl\":\"%s\"," %(""))
-        if item['categories'][0]['label'].upper() == "SHORT" or item['categories'][0]['label'].upper() == "ALRAM":
-            print_format ("\"tags\": [\"THEME_%s\"]," %(item['categories'][0]['label'].upper()))
+
+        # session is tagged by TOPIC, THEME and TYPE
+        topicCatetory = ["SHORT","NEWS", "MOVIE"]
+        if item['categories'][0]['label'].upper() in topicCatetory:
+            print_format ("\"tags\": [\"TOPIC_%s\"]," %(item['categories'][0]['label'].upper()))
         else:
             print_format ("\"tags\": [\"THEME_%s\",\"THEME_ALL\"]," %(item['categories'][0]['label'].upper()))
+
         print_format ("\"mainTag\":\"THEME_%s\"," %(item['categories'][0]['label'].upper()))
         print_format ("\"hashtag\":\"%s\"," %("uuu"))
         print_format ("\"color\":\"%s\"," %("#ffffff"))
@@ -230,8 +234,8 @@ makeFile("../static/life_v",1,cates[2])
 makeFile("../static/enter_v",1,cates[3])
 makeFile("../static/short_v",1,cates[4])
 makeFile("../static/fun_v",1,cates[5])
-makeFile("../static/alert_v",1,cates[6])
+makeFile("../static/alram_v",1,cates[6])
 
 ff= open("../static/manifest_v1.json", 'w', encoding='utf-8')
-ff.write("{\"format\":\"iosched-json-v1\",\"data_files\":[\"enter_v%d.json\",\"it_v%d.json\",\"life_v%d.json\",\"media_v%d.json\",\"short_v%d.json\",\"fun_v%d.json\",\"alert_v%d.json\"]}" %(g_seq,g_seq,g_seq,g_seq,g_seq,g_seq,g_seq))
+ff.write("{\"format\":\"iosched-json-v1\",\"data_files\":[\"enter_v%d.json\",\"it_v%d.json\",\"life_v%d.json\",\"media_v%d.json\",\"short_v%d.json\",\"fun_v%d.json\",\"alram_v%d.json\"]}" %(g_seq,g_seq,g_seq,g_seq,g_seq,g_seq,g_seq))
 ff.close()
