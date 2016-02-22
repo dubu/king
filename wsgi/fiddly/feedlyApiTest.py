@@ -209,7 +209,11 @@ def makeFile(name ,seq ,category):
         cnt += 1
 
     print_format ("]")
-    print_format(", \"tags\":[ { \"category\":\"THEME\", \"tag\":\"THEME_%s\", \"name\":\"%s\", \"original_id\":\"tag_theme_blog\", \"abstract\":\"\", \"order_in_category\":4 } , { \"category\":\"THEME\", \"tag\":\"THEME_ALL\", \"name\":\"ALL\", \"original_id\":\"tag_theme_all\", \"abstract\":\"\", \"order_in_category\":1 }]" %(item['categories'][0]['label'].upper() ,item['categories'][0]['label'].upper()) )
+
+    if item['categories'][0]['label'].upper() in topicCatetory:
+        print_format(", \"tags\":[ { \"category\":\"TOPIC\", \"tag\":\"TOPIC_%s\", \"name\":\"%s\", \"original_id\":\"tag_topic_blog\", \"abstract\":\"\", \"order_in_category\":4 } , { \"category\":\"TOPIC\", \"tag\":\"TOPIC_ETC\", \"name\":\"ETC\", \"original_id\":\"tag_topic_etc\", \"abstract\":\"\", \"order_in_category\":3 }]" %(item['categories'][0]['label'].upper() ,item['categories'][0]['label'].upper()) )
+    else :
+        print_format(", \"tags\":[ { \"category\":\"THEME\", \"tag\":\"THEME_%s\", \"name\":\"%s\", \"original_id\":\"tag_theme_blog\", \"abstract\":\"\", \"order_in_category\":2 } , { \"category\":\"THEME\", \"tag\":\"THEME_ALL\", \"name\":\"ALL\", \"original_id\":\"tag_theme_all\", \"abstract\":\"\", \"order_in_category\":1 }]" %(item['categories'][0]['label'].upper() ,item['categories'][0]['label'].upper()) )
 
     print_format(",\"rooms\": [")
     cnt = 0
