@@ -121,6 +121,16 @@ def makeFile(name ,seq ,category):
         if ifame_url != None:
             description  = description.replace(ifame_url.group(0),"")
 
+        # news aHref 보정
+
+        # if item['categories'][0]['label'].upper() == "NEWS":
+        #     for aTagList  in soup.findAll("a")  :
+        #         ## aTagList = BeautifulSoup(str(aTagList), "lxml").body.contents[0]
+        #         aTagLastTmp =  aTagList[-1]
+        #         for aTag in  aTagList :
+        #             aTag = aTag["text"]
+        #         aTagList[-1] = aTagLastTmp
+
         # fix image width
         # soup = BeautifulSoup(item['summary']['content'], "lxml")
 
