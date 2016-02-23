@@ -173,14 +173,18 @@ def makeFile(name ,seq ,category):
         # page_images = [image["src"] for image in soup.findAll("img")]
         # img =  soup.findAll("img")[0]
 
-        if(soup.findAll("img") and soup.findAll("img")[0].get("src")):
-            if not re.search("ccl_",soup.findAll("img")[0]["src"]):
-                if re.search("uf.tistory.com",soup.findAll("img")[0]["src"]) :
-                    print_format ("\"photoUrl\":\"%s\"," %(soup.findAll("img")[0]["src"].replace("/image/","/T250x250/")))
-                else:
-                    print_format ("\"photoUrl\":\"%s\"," %(soup.findAll("img")[0]["src"]))
-        else:
-            print_format ("\"photoUrl\":\"%s\"," %(""))
+        if item['categories'][0]['label'].upper() == "MOVIE":
+            vid = item['originId'].split(":")[-1]
+            print_format ("\"photoUrl\":\"http://i.ytimg.com/vi/%s/mqdefault.jpg\"," %(vid))
+        else :
+            if(soup.findAll("img") and soup.findAll("img")[0].get("src")):
+                if not re.search("ccl_",soup.findAll("img")[0]["src"]):
+                    if re.search("uf.tistory.com",soup.findAll("img")[0]["src"]) :
+                        print_format ("\"photoUrl\":\"%s\"," %(soup.findAll("img")[0]["src"].replace("/image/","/T250x250/")))
+                    else:
+                        print_format ("\"photoUrl\":\"%s\"," %(soup.findAll("img")[0]["src"]))
+            else:
+                print_format ("\"photoUrl\":\"%s\"," %(""))
 
         # photo_url = re.search('img src="(.*?)"', item['summary']['content'])
         # if photo_url != None:
