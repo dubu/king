@@ -380,7 +380,7 @@
 "captionsUrl":""
 }
 ]
-, "tags":[ { "category":"THEME", "tag":"THEME_LIFE", "name":"LIFE", "original_id":"tag_theme_blog", "abstract":"", "order_in_category":2 } , { "category":"THEME", "tag":"THEME_ALL", "name":"ALL", "original_id":"tag_theme_all", "abstract":"", "order_in_category":1 }]
+, "tags":[ { "category":"THEME", "tag":"THEME_LIFE", "name":"LIFE", "original_id":"tag_theme_blog", "abstract":"", "order_in_category":4 } , { "category":"THEME", "tag":"THEME_ALL", "name":"ALL", "original_id":"tag_theme_all", "abstract":"", "order_in_category":3 }]
 ,"rooms": [
 {
 

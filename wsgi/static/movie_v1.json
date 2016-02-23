@@ -380,7 +380,7 @@
 "captionsUrl":""
 }
 ]
-, "tags":[ { "category":"TOPIC", "tag":"TOPIC_MOVIE", "name":"MOVIE", "original_id":"tag_topic_blog", "abstract":"", "order_in_category":4 } , { "category":"TOPIC", "tag":"TOPIC_ALL", "name":"ETC_ALL", "original_id":"tag_topic_all", "abstract":"", "order_in_category":3 }]
+, "tags":[ { "category":"TOPIC", "tag":"TOPIC_MOVIE", "name":"MOVIE", "original_id":"tag_topic_blog", "abstract":"", "order_in_category":2 } , { "category":"TOPIC", "tag":"TOPIC_ALL", "name":"ETC_ALL", "original_id":"tag_topic_all", "abstract":"", "order_in_category":1 }]
 ,"rooms": [
 {
 
