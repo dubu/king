@@ -176,6 +176,7 @@ def makeFile(name ,seq ,category):
         if item['categories'][0]['label'].upper() == "MOVIE":
             vid = item['originId'].split(":")[-1]
             print_format ("\"photoUrl\":\"http://i.ytimg.com/vi/%s/mqdefault.jpg\"," %(vid))
+            print_format ("\"youtubeUrl\":\"%s\"," %(vid))
         else :
             if(soup.findAll("img") and soup.findAll("img")[0].get("src")):
                 if not re.search("ccl_",soup.findAll("img")[0]["src"]):
@@ -185,6 +186,7 @@ def makeFile(name ,seq ,category):
                         print_format ("\"photoUrl\":\"%s\"," %(soup.findAll("img")[0]["src"]))
             else:
                 print_format ("\"photoUrl\":\"%s\"," %(""))
+                print_format ("\"youtubeUrl\":\"%s\"," %(""))
 
         # photo_url = re.search('img src="(.*?)"', item['summary']['content'])
         # if photo_url != None:
@@ -193,7 +195,7 @@ def makeFile(name ,seq ,category):
         #     print_format ("\"photoUrl\":\"%s\"," %(""))
 
         print_format ("\"isLivestream\":%s," %("true"))
-        print_format ("\"youtubeUrl\":\"%s\"," %(""))
+
 
         # session is tagged by TOPIC, THEME and TYPE
         topicCatetory = ["SHORT","NEWS", "MOVIE"]
