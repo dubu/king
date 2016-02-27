@@ -198,10 +198,10 @@ def makeFile(name ,seq ,category):
 
 
         # session is tagged by TOPIC, THEME and TYPE
-        topicCatetory = ["SHORT","NEWS", "MOVIE"]
-        if item['categories'][0]['label'].upper() in topicCatetory:
-            print_format ("\"tags\": [\"TOPIC_%s\",\"TOPIC_ALL\"]," %(item['categories'][0]['label'].upper()))
-            print_format ("\"mainTag\":\"TOPIC_%s\"," %(item['categories'][0]['label'].upper()))
+        typeCatetory = ["SHORT","NEWS", "MOVIE"]
+        if item['categories'][0]['label'].upper() in typeCatetory:
+            print_format ("\"tags\": [\"TYPE_%s\",\"TYPE_ALL\"]," %(item['categories'][0]['label'].upper()))
+            print_format ("\"mainTag\":\"TYPE_%s\"," %(item['categories'][0]['label'].upper()))
         else:
             print_format ("\"tags\": [\"THEME_%s\",\"THEME_ALL\"]," %(item['categories'][0]['label'].upper()))
             print_format ("\"mainTag\":\"THEME_%s\"," %(item['categories'][0]['label'].upper()))
@@ -226,8 +226,8 @@ def makeFile(name ,seq ,category):
 
     print_format ("]")
 
-    if item['categories'][0]['label'].upper() in topicCatetory:
-        print_format(", \"tags\":[ { \"category\":\"TOPIC\", \"tag\":\"TOPIC_%s\", \"name\":\"%s\", \"original_id\":\"tag_topic_blog\", \"abstract\":\"\", \"order_in_category\":2 } , { \"category\":\"TOPIC\", \"tag\":\"TOPIC_ALL\", \"name\":\"ETC_ALL\", \"original_id\":\"tag_topic_all\", \"abstract\":\"\", \"order_in_category\":1 }]" %(item['categories'][0]['label'].upper() ,item['categories'][0]['label'].upper()) )
+    if item['categories'][0]['label'].upper() in typeCatetory:
+        print_format(", \"tags\":[ { \"category\":\"TYPE\", \"tag\":\"TYPE_%s\", \"name\":\"%s\", \"original_id\":\"tag_type_blog\", \"abstract\":\"\", \"order_in_category\":2 } , { \"category\":\"TYPE\", \"tag\":\"TYPE_ALL\", \"name\":\"ETC_ALL\", \"original_id\":\"tag_type_all\", \"abstract\":\"\", \"order_in_category\":1 }]" %(item['categories'][0]['label'].upper() ,item['categories'][0]['label'].upper()) )
     else :
         print_format(", \"tags\":[ { \"category\":\"THEME\", \"tag\":\"THEME_%s\", \"name\":\"%s\", \"original_id\":\"tag_theme_blog\", \"abstract\":\"\", \"order_in_category\":4 } , { \"category\":\"THEME\", \"tag\":\"THEME_ALL\", \"name\":\"ALL\", \"original_id\":\"tag_theme_all\", \"abstract\":\"\", \"order_in_category\":3 }]" %(item['categories'][0]['label'].upper() ,item['categories'][0]['label'].upper()) )
 
