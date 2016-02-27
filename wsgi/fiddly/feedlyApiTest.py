@@ -123,26 +123,10 @@ def makeFile(name ,seq ,category):
 
         # news aHref 보정
 
-        # if item['categories'][0]['label'].upper() == "NEWS":
-        #     for aTagList  in soup.findAll("a")  :
-        #         ## aTagList = BeautifulSoup(str(aTagList), "lxml").body.contents[0]
-        #         aTagLastTmp =  aTagList[-1]
-        #         for aTag in  aTagList :
-        #             aTag = aTag["text"]
-        #         aTagList[-1] = aTagLastTmp
-
-        # fix image width
-        # soup = BeautifulSoup(item['summary']['content'], "lxml")
-
-        # if item.get('summary') :
-        #     soup = BeautifulSoup(item['summary']['content'], "lxml")
-        # else :
-        #     soup = BeautifulSoup(item['content']['content'], "lxml")
-
-        for img  in soup.findAll("img")  :
-            img = BeautifulSoup(str(img), "lxml").body.contents[0]
-            img["width"] = "50%"
-            img["height"] = ""
+        if item['categories'][0]['label'].upper() == "NEWS":
+            lastAHrefLink = soup.findAll("a")[-1]["href"]
+            for aTagList  in soup.findAll("a")  :
+                aTagList["href"] = lastAHrefLink
 
         print_format ("\"description\":\"%s\"," %(description))
 
@@ -249,14 +233,14 @@ def makeFile(name ,seq ,category):
     print_format("]}")
     f.close()
 
-makeFile("../static/it_v",1, cates[0])
-makeFile("../static/media_v",1,cates[1])
-makeFile("../static/life_v",1,cates[2])
-makeFile("../static/enter_v",1,cates[3])
-makeFile("../static/short_v",1,cates[4])
-makeFile("../static/fun_v",1,cates[5])
+# makeFile("../static/it_v",1, cates[0])
+# makeFile("../static/media_v",1,cates[1])
+# makeFile("../static/life_v",1,cates[2])
+# makeFile("../static/enter_v",1,cates[3])
+# makeFile("../static/short_v",1,cates[4])
+# makeFile("../static/fun_v",1,cates[5])
 makeFile("../static/alram_v",1,cates[6])
-makeFile("../static/movie_v",1,cates[7])
+# makeFile("../static/movie_v",1,cates[7])
 
 ff= open("../static/manifest_v1.json", 'w', encoding='utf-8')
 ff.write("{\"format\":\"iosched-json-v1\",\"data_files\":[\"enter_v%d.json\",\"it_v%d.json\",\"life_v%d.json\",\"media_v%d.json\",\"short_v%d.json\",\"fun_v%d.json\",\"alram_v%d.json\",\"movie_v%d.json\"]}" %(g_seq,g_seq,g_seq,g_seq,g_seq,g_seq,g_seq,g_seq))
