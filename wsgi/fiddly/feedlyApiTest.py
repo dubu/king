@@ -227,7 +227,7 @@ def makeFile(name ,seq ,category):
     print_format ("]")
 
     if item['categories'][0]['label'].upper() in topicCatetory:
-        print_format(", \"tags\":[ { \"category\":\"TOPIC\", \"tag\":\"TOPIC_%s\", \"name\":\"%s\", \"original_id\":\"tag_topic_blog\", \"abstract\":\"\", \"order_in_category\":2 } , { \"category\":\"TOPIC\", \"tag\":\"TOPIC_ALL\", \"name\":\"ETC_ALL\", \"original_id\":\"tag_topic_all\", \"abstract\":\"\", \"order_in_category\":1 }]" %(item['categories'][0]['label'].upper() ,item['categories'][0]['label'].upper()) )
+        print_format(", \"tags\":[ { \"category\":\"TOPIC\", \"tag\":\"TOPIC_%s\", \"name\":\"%s\", \"original_id\":\"tag_topic_blog\", \"abstract\":\"\", \"order_in_category\":2 } ]" %(item['categories'][0]['label'].upper() ,item['categories'][0]['label'].upper()) )
     else :
         print_format(", \"tags\":[ { \"category\":\"THEME\", \"tag\":\"THEME_%s\", \"name\":\"%s\", \"original_id\":\"tag_theme_blog\", \"abstract\":\"\", \"order_in_category\":4 } , { \"category\":\"THEME\", \"tag\":\"THEME_ALL\", \"name\":\"ALL\", \"original_id\":\"tag_theme_all\", \"abstract\":\"\", \"order_in_category\":3 }]" %(item['categories'][0]['label'].upper() ,item['categories'][0]['label'].upper()) )
 
