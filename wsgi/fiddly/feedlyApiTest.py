@@ -113,6 +113,12 @@ def makeFile(name ,seq ,category):
                 img["width"] = "100%"
                 img["height"] = ""
 
+        # news aHref 보정
+        if item['categories'][0]['label'].upper() == "NEWS":
+            lastAHrefLink = soup.findAll("a")[-1]["href"]
+            for aTagList  in soup.findAll("a")  :
+                aTagList["href"] = lastAHrefLink
+
         description = str(soup)
         description = cgi.escape(description , True).replace("\n","\\n")
 
@@ -121,12 +127,7 @@ def makeFile(name ,seq ,category):
         if ifame_url != None:
             description  = description.replace(ifame_url.group(0),"")
 
-        # news aHref 보정
 
-        if item['categories'][0]['label'].upper() == "NEWS":
-            lastAHrefLink = soup.findAll("a")[-1]["href"]
-            for aTagList  in soup.findAll("a")  :
-                aTagList["href"] = lastAHrefLink
 
         print_format ("\"description\":\"%s\"," %(description))
 
@@ -242,8 +243,8 @@ makeFile("../static/life_v",1,cates[2])
 makeFile("../static/enter_v",1,cates[3])
 makeFile("../static/short_v",1,cates[4])
 makeFile("../static/fun_v",1,cates[5])
-makeFile("../static/alram_v",1,cates[6])
 makeFile("../static/movie_v",1,cates[7])
+makeFile("../static/alram_v",1,cates[6])
 
 ff= open("../static/manifest_v1.json", 'w', encoding='utf-8')
 ff.write("{\"format\":\"iosched-json-v1\",\"data_files\":[\"enter_v%d.json\",\"it_v%d.json\",\"life_v%d.json\",\"media_v%d.json\",\"short_v%d.json\",\"fun_v%d.json\",\"alram_v%d.json\",\"movie_v%d.json\"]}" %(g_seq,g_seq,g_seq,g_seq,g_seq,g_seq,g_seq,g_seq))
